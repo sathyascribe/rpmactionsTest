@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms and Privacy Policy"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal" >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text=""
+            android:clickable="false"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/terms_condition"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+           />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:background="@drawable/button_theme"
+                android:backgroundTint="@color/purple_700"
+                android:text="Cancel"
+                android:textColor="#FFF" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/accept_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:background="@drawable/button_theme"
+                android:text="Accept"
+                android:layout_gravity=""
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+
+</LinearLayout>

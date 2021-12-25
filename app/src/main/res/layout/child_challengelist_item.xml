@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:id="@+id/mainviewfarmerlist_ll">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:visibility="visible"
+        android:id="@+id/farmerimagelayout_ll">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:visibility="gone"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            app:civ_border_width="1dp"
+            android:tint="@color/orange"
+            android:src="@drawable/circle"
+            android:id="@+id/rpmimage_iv"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/rpmimage_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:tint="@color/orange"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="ddd"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_weight="2"
+        android:id="@+id/farmernameandcodelist_ll">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Name_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="@font/montserrat_semibold"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/distanceId_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="start"
+                android:text="mile"
+                android:textColor="#5C5757"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/montserrat_regular"/>
+            <TextView
+                android:id="@+id/days_remaining_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_marginRight="20dp"
+                android:text="5 days remaining"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:fontFamily="@font/montserrat_regular"/>
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/participents_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_marginRight="20dp"
+            android:text="5 days remaining"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:fontFamily="@font/montserrat_regular"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/startTime_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_marginRight="20dp"
+            android:text="5 days remaining"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:fontFamily="@font/montserrat_regular"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/endTime_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_marginRight="20dp"
+            android:text="5 days remaining"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:fontFamily="@font/montserrat_regular"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/challengeId_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_marginRight="20dp"
+            android:text="5 days remaining"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:fontFamily="@font/montserrat_regular"/>
+
+    </LinearLayout>
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_gravity="end"
+            android:src="@drawable/connection1"
+            android:id="@+id/correctnot"/>
+
+    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:id="@+id/nofarmerRecords_ll">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:text="Currently No  Records"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

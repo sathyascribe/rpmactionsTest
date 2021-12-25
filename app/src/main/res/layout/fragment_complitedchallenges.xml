@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_challenge_bg"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_check_circle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Challenge Created"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:fontFamily="@font/montserrat_medium"/>
+
+        <TextView
+            android:id="@+id/challengeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:text="Marathon"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:fontFamily="@font/montserrat_semibold"/>
+
+        <TextView
+            android:id="@+id/distance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:text="200 Mi"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:fontFamily="@font/montserrat_medium"/>
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="28 Nov 2021 - 30 Nov 2021 "
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:fontFamily="@font/montserrat_medium"/>
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="4h 30m AM-6h 20m"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:fontFamily="@font/montserrat_medium"/>
+    </LinearLayout>
+</LinearLayout>

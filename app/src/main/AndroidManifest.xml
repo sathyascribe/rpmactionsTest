@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inventica.rpmapp">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".ui.application.RPMApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_rpm_logo_00001"
+
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/ic_rpm_logo_00001"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RPMApp">
+        <activity android:name=".ui.activity.StartChallengActivity"></activity>
+        <activity android:name=".ui.activity.home.TestingSensorActivity"></activity>
+        <activity android:name=".ui.activity.InviteFriendsActivity" />
+        <activity android:name=".ui.activity.MyConnectionsList" />
+        <activity android:name=".ui.activity.calendar.EventDetailsActivity" />
+        <activity android:name=".ui.activity.calendar.AddEventActivity" />
+        <activity android:name=".ui.activity.Challenge_InviteFriends_Activity" />
+        <activity android:name=".ui.activity.calendar.CalendarActivity" />
+        <activity android:name=".ui.activity.connection.UserDetailsForInvitationConnection" />
+        <activity android:name=".ui.activity.gallery.VideoPlayerActivity" />
+        <activity android:name=".ui.activity.gallery.GalleryActivity" />
+        <activity android:name=".ui.activity.gear.GearActivity" />
+        <activity android:name=".ui.GearListActivity" />
+        <activity android:name=".ui.activity.gear.AddGear" />
+        <activity
+            android:name=".ui.activity.ChallengeActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar" />
+        <activity android:name=".ui.activity.NotificationActivity" />
+        <activity android:name=".ui.activity.SettingActivity" />
+        <activity android:name=".ui.activity.SupportActivity" />
+        <activity android:name=".ui.activity.connection.ConnectionsActivity" />
+        <activity android:name=".ui.activity.JoinChallenge_Activity" />
+        <activity android:name=".ui.activity.ChallengeDetails_Activity" />
+        <activity android:name=".ui.activity.NotificationSettingActivity" />
+        <activity android:name=".ui.activity.FeedbackActivity" />
+        <activity android:name=".ui.activity.ManagePermissionActivity" />
+        <activity android:name=".ui.activity.ComplitedChallengeActivity" />
+        <activity android:name=".ui.activity.ProfileActivity" />
+        <activity android:name=".ui.activity.ActivityModle_Activity" />
+        <activity android:name=".ui.activity.CreateChallengeComplitedActivity" />
+        <activity android:name=".ui.activity.Create_ChallengeActivity" />
+        <activity android:name=".ui.activity.BeginChallenge_Activity" />
+        <activity android:name=".ui.activity.Edit_ChallengeActivity" />
+        <activity android:name=".ui.activity.ThemesActivity" />
+        <activity android:name=".ui.activity.Music.AllSongsActivity" />
+        <activity android:name=".ui.activity.Music.MusicMainActivity" />
+        <activity android:name=".ui.activity.Music.MusicPlay_Activity" />
+        <activity android:name=".ui.activity.Music.FavouriteSongsActivity" />
+        <activity android:name=".ui.activity.Music.PlayList_AlbumsActivity" />
+        <activity android:name=".ui.activity.Music.PlayList_SongsActivity" />
+        <activity android:name=".ui.activity.Music.PlayList_AddSongsActivity"/>
+        <activity android:name=".ui.activity.LeaderBoard_Activity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.activity.PaymentActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar" />
+        <activity
+            android:name=".ui.activity.SignUpActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar" />
+        <activity
+            android:name=".ui.activity.Yourself_MeasurementActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar" />
+        <activity
+            android:name=".ui.activity.LocationFetchActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar" />
+        <activity
+            android:name=".ui.activity.StartActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar" />
+        <activity
+            android:name=".ui.activity.SetPasswordActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar" />
+        <activity
+            android:name=".ui.activity.InviteCodeActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar" />
+        <activity
+            android:name=".ui.activity.ChangePasswordActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar" />
+        <activity
+            android:name=".ui.activity.ResetPasswordActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar" />
+        <activity
+            android:name=".ui.activity.SignInActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.activity.SelectionActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar" />
+        <activity
+            android:name=".ui.activity.LoginHomeActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar" />
+        <activity
+            android:name=".ui.activity.home.MainActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".ui.activity.WelcomeActivity"
+            android:theme="@style/Theme.RPMApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

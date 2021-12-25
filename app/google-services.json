@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "470012328326",
+    "project_id": "rpmapp-3e17a",
+    "storage_bucket": "rpmapp-3e17a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470012328326:android:762b67413576a5b6da1407",
+        "android_client_info": {
+          "package_name": "com.promena.rpmapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470012328326-akhpf3jlggju7bppce4fn2povg56os01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.promena.rpmapp",
+            "certificate_hash": "26fd2fc05ffa9e4a22253c0668e79367969d877c"
+          }
+        },
+        {
+          "client_id": "470012328326-h7vqk5nq1upv00u90ga1djcumern02g7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAPly7Oqgor_q4ja5uNfUF41wJ9ef6Ko8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470012328326-h7vqk5nq1upv00u90ga1djcumern02g7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

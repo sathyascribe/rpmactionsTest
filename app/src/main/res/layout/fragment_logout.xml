@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_700">
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@color/white"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            card_view:contentPadding="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Query Related To"
+                android:textColor="#404040"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spCountry"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner"
+                android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Message"
+                    android:textColor="#404040"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edit_text_border"
+                    android:gravity="start|top"
+                    android:hint="Enter your issues here"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine"
+                    android:padding="12dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_continue"
+                    android:layout_width="250sp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="40sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_theme"
+                    android:text="Submit"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="You can also directly mail us queries to"
+                    android:gravity="bottom"
+                    android:layout_marginTop="120dp"
+                    android:layout_gravity="center|bottom"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/slide_desc" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="rpm@support.com"
+                    android:gravity="bottom"
+                    android:layout_gravity="center|bottom"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_rpm_logo_00001" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up with "
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/slide_desc" />
+            <ImageView
+                android:layout_width="120dp"
+                android:scaleType="centerInside"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_fb"/>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Facebook"-->
+<!--                android:textStyle="bold"-->
+<!--                android:padding="2dp"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/montserrat_black"-->
+<!--                android:textColor="@color/light_blue_900"-->
+<!--                android:textSize="18dp" />-->
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/teal_200"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginTop="10sp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_emailId"
+                android:background="@drawable/edit_text_border"
+                android:hint="Email "
+                android:paddingStart="20dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:textSize="14sp"
+                android:paddingEnd="20dp"
+                android:fontFamily="@font/montserrat_medium"
+
+                android:layout_height="45dp"
+                android:layout_width="match_parent"/>
+            <EditText
+                android:id="@+id/et_phone"
+                android:background="@drawable/edit_text_border"
+                android:hint="Phone Number"
+                android:paddingStart="20dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:textSize="14sp"
+                android:paddingEnd="20dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+               android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_firstName"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="First Name"
+                    android:paddingStart="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="14sp"
+                    android:paddingEnd="20dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_height="45dp"
+
+                    android:layout_marginEnd="5dp"
+
+                    android:layout_width="match_parent"/>
+                <EditText
+                    android:id="@+id/et_lastName"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="Last Name"
+                    android:paddingStart="20dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginStart="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="14sp"
+                    android:paddingEnd="20dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_height="45dp"
+                    android:layout_width="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal">
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gender_radiogroup"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rdb_male"
+                        android:onClick="onRadioButtonGenderClicked"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Male"
+                        />
+                    <RadioButton
+                        android:id="@+id/rdb_female"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:onClick="onRadioButtonGenderClicked"/>
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Date of birth: "
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/slide_desc" />
+                <TextView
+                    android:id="@+id/dob_tv"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_border"
+                    android:hint="DD/MM/YY"
+                    android:paddingStart="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="14sp"
+                    android:paddingEnd="20dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_height="45dp"
+                    android:textAlignment="center"
+                  android:gravity="center"
+                    android:layout_width="match_parent"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rel_yearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_below="@+id/mainlinearlayout_ll"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spinner_layout"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/countrylist_SP"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+
+                        android:paddingTop="10dp"
+                        android:paddingStart="20dp"
+                        android:spinnerMode="dropdown" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-4dp"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Country"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rel_statelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_below="@+id/mainlinearlayout_ll"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spinner_layout"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/statelist_SP"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:paddingTop="10dp"
+                        android:paddingStart="20dp"
+                        android:dropDownVerticalOffset="35dp"
+                        android:spinnerMode="dropdown" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-4dp"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="State"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rel_citylayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_below="@+id/mainlinearlayout_ll"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spinner_layout"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/citylist_SP"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:paddingTop="10dp"
+                        android:paddingStart="20dp"
+                        android:dropDownVerticalOffset="35dp"
+                        android:spinnerMode="dropdown" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-4dp"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="City"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_below="@+id/mainlinearlayout_ll"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spinner_layout"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/languagelist_SP"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:paddingTop="10dp"
+                        android:paddingStart="20dp"
+                        android:dropDownVerticalOffset="35dp"
+                        android:spinnerMode="dropdown" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-4dp"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="Language"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:background="@drawable/edit_text_border"
+                android:hint="Password"
+                android:paddingStart="20dp"
+                android:paddingBottom="5dp"
+
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:textSize="14sp"
+                android:paddingEnd="20dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="left"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:text=""
+                        android:clickable="false"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit Lorem ipsum dolor sit amet"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_weight="1" />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/joinus_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:background="@drawable/button_theme"
+            android:text="Join Us"
+            android:textColor="#FFF" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Already a Member?  "
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/slide_desc" />
+            <TextView
+                android:id="@+id/tv_signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/teal_200"
+                android:textSize="@dimen/slide_desc" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

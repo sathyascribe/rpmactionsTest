@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_notification"
+        android:title="Send"
+        android:icon="@drawable/nav_notification_24"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_setting"
+        android:title="setting"
+        android:icon="@drawable/nav_setting_24"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_invitechallenge"
+        android:orderInCategory="100"
+        android:title="@string/action_invitechallenge"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_editchallenge"
+        android:orderInCategory="100"
+        android:title="@string/action_editchallenge"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_leavechallenge"
+        android:orderInCategory="100"
+        android:title="@string/action_leavechallenge"
+        app:showAsAction="never" />
+</menu>

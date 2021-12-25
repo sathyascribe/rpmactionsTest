@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.inventica.rpmapp.ui.activity.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.inventica.rpmapp.ui.fragment.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.inventica.rpmapp.ui.fragment.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_myprofile"
+        android:name="com.inventica.rpmapp.ui.fragment.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_activities"
+        android:name="com.inventica.rpmapp.ui.fragment.ActivityFragment"
+        android:label="@string/menu_activity"
+        tools:layout="@layout/fragment_activity" />
+    <fragment
+        android:id="@+id/nav_gears"
+        android:name="com.inventica.rpmapp.ui.fragment.GearFragment"
+        android:label="@string/menu_gear"
+        tools:layout="@layout/fragment_gear" />
+    <fragment
+        android:id="@+id/nav_connection"
+        android:name="com.inventica.rpmapp.ui.fragment.ConnectionsFragment"
+        android:label="@string/menu_connection"
+        tools:layout="@layout/fragment_connection" />
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.inventica.rpmapp.ui.fragment.NotificationFragment"
+        android:label="@string/menu_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/nav_challenges"
+        android:name="com.inventica.rpmapp.ui.fragment.ChallengesFragment"
+        android:label="@string/menu_challenges"
+        tools:layout="@layout/fragment_challenges" />
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.inventica.rpmapp.ui.fragment.SettingFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.inventica.rpmapp.ui.fragment.SupportFragment"
+        android:label="@string/menu_support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.inventica.rpmapp.ui.fragment.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

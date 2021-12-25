@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/start_background"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="150sp"
+                android:src="@drawable/ic_rpm_logo_00001" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Welcome Eddie!"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/slide_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/slide_3_desc1"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/slide_desc" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="60sp"
+        android:background="@drawable/button_theme"
+        android:text="Get Started"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFF" />
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Need Help ?  "
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/slide_desc" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/click_here"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/slide_desc" />
+    </LinearLayout>
+-->
+
+</RelativeLayout>

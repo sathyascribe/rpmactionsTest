@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_challenges" android:layout_height="match_parent" android:layout_width="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/fullscreen_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/white">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_challenge"
+                        android:layout_width="250sp"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_theme"
+                        android:text="Create Challenges"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="#FFF" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="My Challenges"
+                                android:textColor="#404040"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <ListView
+                                android:id="@+id/challeng_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/dark_gray"/>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Join Challenges"
+                                android:textColor="#404040"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+                            <ListView
+                                android:id="@+id/join_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+                            </ListView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+<!--
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_challenges" android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:background="@color/white">
+
+       &lt;!&ndash; <include layout="@layout/content_main" />&ndash;&gt;
+
+        <LinearLayout
+            android:id="@+id/fullscreen_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+          &lt;!&ndash;  <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                >&ndash;&gt;
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                     &lt;!&ndash;
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="10K"
+                            android:textSize="35dp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="150sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/montserrat_semibold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Join 55, 26 running"
+                            android:textSize="12dp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="250sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/montserrat_semibold"/>&ndash;&gt;
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/white">
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btn_challenge"
+                                android:layout_width="250sp"
+                                android:layout_height="42dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20sp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/button_theme"
+                                android:text="Create Challenges"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="#FFF" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:weightSum="2">
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:text="My Challenges"
+                                        android:textColor="#404040"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold" />
+
+                                    <ListView
+                                        android:id="@+id/challeng_list"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"/>
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@color/dark_gray"/>
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:fontFamily="@font/montserrat_medium"
+                                        android:text="Join Challenges"
+                                        android:textColor="#404040"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold" />
+                                    <ListView
+                                        android:id="@+id/join_list"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp">
+
+                                    </ListView>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+           &lt;!&ndash; </androidx.cardview.widget.CardView>&ndash;&gt;
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>-->

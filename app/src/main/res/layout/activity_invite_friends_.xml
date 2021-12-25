@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.Challenge_InviteFriends_Activity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <!--<com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_searchProject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            >
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="15sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <com.inventica.rpmapp.ui.utils.NonScrollListView
+            android:id = "@+id/listview_invite"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/invite_frnd_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:background="@drawable/button_theme"
+            android:text="Invite Friends"
+            android:textColor="#FFF" />
+
+    </RelativeLayout>
+</RelativeLayout>

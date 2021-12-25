@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#a59fb1</color>
+    <color name="purple_500">#211540</color>
+    <color name="purple_700">#1e113d</color>
+    <color name="teal_200">#e33254</color>
+    <color name="teal_700">#e01c42</color>
+    <color name="black">#FF000000</color>
+    <color name="less_black">#2C2C2C</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#fa7530</color>
+    <color name="dark_gray">#696969</color>
+    <color name="nav_text_color">#636363</color>
+    <color name="view_color">#DCDCDC</color>
+    <color name="text_light_grey">#B6B6B6</color>
+    <color name="light_background">#f2f4f5</color>
+    <color name="title_color">#D5D3D3</color>
+    <color name="connection_frag_background">#f5f7fb</color>
+
+    <color name="event_blue_color">#84a7ec</color>
+    <color name="bg_grey">#e4e4e4</color>
+
+    <color name="event_blue">#00256a</color>
+    <color name="color_goal_bg">#3c3c95</color>
+    <color name="event_orange">#fa7530</color>
+    <color name="event_pink">#ec7780</color>
+    <color name="event_green">#235e5c</color>
+
+    <color name="normal_text">#404040</color>
+
+    <array name="array_dot_active">
+        <item>@color/purple_200</item>
+        <item>@color/purple_200</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/orange</item>
+        <item>@color/orange</item>
+    </array>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="green">#18aa00</color>
+    <color name="barchart_orange">#fa7530</color>
+<color name="button_blue">#4180ea</color>
+    // ------------spinner
+    <color name="spinner_set_goals_color">#f5f7fb</color>
+    <color name="spinner_text_color">#191919</color>
+</resources>

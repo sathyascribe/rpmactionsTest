@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myProfile"
+            android:icon="@drawable/ic_my_profile_grey"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_activities"
+            android:icon="@drawable/ic_heartbeat_grey"
+            android:title="Activities" />
+        <item
+            android:id="@+id/nav_gears"
+            android:icon="@drawable/ic_gears_grey_shoe"
+            android:title="Gears" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_video"
+            android:title="Videos Gallery" />
+        <item
+            android:id="@+id/nav_connection"
+            android:icon="@drawable/ic_connection_pin_grey"
+            android:title="Connections" />
+    </group>
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_challenges"
+            android:icon="@drawable/ic_challenge_grey"
+            android:title="Challenges" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings_grey"
+            android:title="Setting" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_bell_icon_svg"
+            android:title="Notification" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/ic_baseline_build_24"
+            android:title="Support" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

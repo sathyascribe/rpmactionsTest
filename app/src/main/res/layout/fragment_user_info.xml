@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/connection_frag_background"
+    android:layout_height="match_parent"
+  >
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+
+           android:layout_height="wrap_content">
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="90dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.0"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent">
+
+
+               <TextView
+                   android:id="@+id/name"
+                   style="@style/UserDetailsText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="24dp"
+                   android:layout_marginTop="16dp"
+                   android:text="Name"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/textName"
+                   style="@style/UserDetailsText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="TextView"
+                   android:textColor="@color/less_black"
+                   app:layout_constraintStart_toStartOf="@+id/name"
+                   app:layout_constraintTop_toBottomOf="@+id/name" />
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#A1A1A1"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="parent" />
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="90dp"
+               android:layout_below="@+id/constraintLayout">
+
+               <TextView
+                   android:id="@+id/email"
+                   style="@style/UserDetailsText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="24dp"
+                   android:layout_marginTop="16dp"
+                   android:text="Email"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/textEmail"
+                   style="@style/UserDetailsText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="TextView"
+                   android:textColor="@color/less_black"
+                   app:layout_constraintStart_toStartOf="@+id/email"
+                   app:layout_constraintTop_toBottomOf="@+id/email" />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#A1A1A1"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="parent" />
+           </androidx.constraintlayout.widget.ConstraintLayout>
+           <androidx.constraintlayout.widget.ConstraintLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="90dp"
+               android:layout_below="@+id/constraintLayout">
+
+               <TextView
+                   android:id="@+id/gender"
+                   style="@style/UserDetailsText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="24dp"
+                   android:layout_marginTop="16dp"
+                   android:text="Gender"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/textGender"
+                   style="@style/UserDetailsText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="TextView"
+
+                   android:textColor="@color/less_black"
+                   app:layout_constraintStart_toStartOf="@+id/gender"
+                   app:layout_constraintTop_toBottomOf="@+id/gender" />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#A1A1A1"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="parent" />
+           </androidx.constraintlayout.widget.ConstraintLayout>
+           <androidx.constraintlayout.widget.ConstraintLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="90dp"
+               android:layout_below="@+id/constraintLayout">
+
+               <TextView
+                   android:id="@+id/group"
+                   style="@style/UserDetailsText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="24dp"
+                   android:layout_marginTop="16dp"
+                   android:text="Group or Organization"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/textGroup"
+                   style="@style/UserDetailsText"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="12dp"
+                   android:text="Apple Fitness"
+                   android:textColor="@color/less_black"
+                   app:layout_constraintStart_toStartOf="@+id/group"
+                   app:layout_constraintTop_toBottomOf="@+id/group" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+       </LinearLayout>
+   </ScrollView>
+
+</FrameLayout>

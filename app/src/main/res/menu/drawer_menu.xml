@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myProfile"
+            android:icon="@drawable/nav_user_icon"
+            android:checked="false"
+            android:title="@string/my_profile" />
+        <item
+            android:id="@+id/nav_activities"
+            android:icon="@drawable/nav_activity_icon"
+            android:checked="false"
+            android:title="@string/activities" />
+        <item
+            android:id="@+id/nav_gears"
+            android:icon="@drawable/nav_gear_icon"
+            android:title="@string/gears" />
+    </group>
+
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/nav_video_icon"
+            android:checked="false"
+            android:title="@string/videos_gallery" />
+        <item
+            android:id="@+id/nav_connection"
+            android:icon="@drawable/nav_connection_icon"
+            android:checked="false"
+            android:title="@string/connections" />
+
+        <item
+            android:id="@+id/nav_challenges"
+            android:icon="@drawable/nav_challenges_icon"
+            android:checked="false"
+            android:title="@string/challenges" />
+
+
+
+
+
+
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/nav_calendar_icon"
+            android:checked="false"
+            android:title="@string/calendar" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/nav_setting_icon"
+            android:checked="false"
+            android:title="@string/setting" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/nav_notification_icon"
+            android:checked="false"
+            android:title="@string/notification" />
+        <item
+            android:id="@+id/nav_support"
+            android:checked="false"
+            android:icon="@drawable/nav_support_icon"
+            android:title="@string/support" />
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:checked="false"
+            android:icon="@drawable/nav_logout_icon"
+            android:title="@string/logout" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700">
+
+    <!-- TODO: Update blank fragment layout -->
+   <ScrollView
+       android:layout_width="match_parent"
+       android:fillViewport="true"
+       android:layout_height="match_parent">
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cardView"
+           android:layout_width="match_parent"
+
+           android:layout_height="match_parent"
+           android:background="@drawable/card_bg"
+           android:layout_marginTop="10dp"
+          >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:background="@color/white">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="20dp"
+                   android:fontFamily="@font/montserrat_medium"
+                   android:text="@string/my_activity_gear"
+                   android:textColor="#404040"
+                   android:textSize="18sp"
+                   android:textStyle="bold" />
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/recyclerView_myGear"
+                   android:layout_width="match_parent"
+                   android:visibility="gone"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:id="@+id/text_noActiveGear"
+                   android:layout_margin="30dp"
+                   android:textSize="14sp"
+                   android:layout_gravity="center_horizontal"
+                   android:text="No active shoe found, Please add your shoe"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="20dp"
+                   android:fontFamily="@font/montserrat_medium"
+                   android:text="@string/my_retired_gears"
+                   android:textColor="#404040"
+                   android:textSize="18sp"
+                   android:textStyle="bold" />
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/recyclerView_myGear_retired"
+                   android:layout_width="match_parent"
+                   android:visibility="gone"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:id="@+id/text_noRetiredGear"
+                   android:layout_margin="30dp"
+                   android:textSize="14sp"
+                   android:layout_gravity="center_horizontal"
+                   android:text="No retired shoe found"
+                   android:layout_height="wrap_content"/>
+           </LinearLayout>
+
+           <com.google.android.material.floatingactionbutton.FloatingActionButton
+               android:id="@+id/fab"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="end|bottom"
+               android:src="@drawable/ic_baseline_add_24"
+               android:layout_margin="16dp" />
+
+       </androidx.cardview.widget.CardView>
+   </ScrollView>
+
+
+
+
+</FrameLayout>

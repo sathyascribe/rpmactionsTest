@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">RPM App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">ABC</string>
+    <string name="nav_header_subtitle">abc@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_invitechallenge">Invite Friends</string>
+    <string name="action_editchallenge">Edit Challenge</string>
+    <string name="action_leavechallenge">Leave Challenge</string>
+    <string name="action_editplaylist">Edit Playlist</string>
+    <string name="action_songdelete">Delete Playlist</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="menu_activity">My Activity</string>
+    <string name="menu_gear">Gear</string>
+    <string name="menu_connection">Connections</string>
+    <string name="menu_challenges">Challenges</string>
+    <string name="menu_notification">Notification</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_support">Support</string>
+    <string name="menu_logout">Logout</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Record activities</string>
+    <string name="slide_1_desc">Using GPS tracking</string>
+
+    <string name="slide_2_title">Keep Heart Healthy</string>
+    <string name="slide_2_desc">Calories &amp; Stride Length Calculation needs it</string>
+
+    <string name="slide_3_desc1">All of the membership rules contained herein apply equally to members, temporary members and guests alike fitness.</string>
+    <string name="slide_3_desc2">Install our free Android app to develop your online store and reach out to customers online and expand your business A clearer view of all the available products to give the customers an idea to update their cart </string>
+    <string name="slide_3_desc3">Legal and Privacy Policy</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="click_here">Click Here</string>
+    <string name="jwt_token" translatable="false">jwt_token_key</string>
+    <string name="jwt_refresh_token" translatable="false">jwt_refresh_token_key</string>
+    <string name="email_id">email_id</string>
+    <string name="name">name</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="logout_description">Are you sure you want to logout?</string>
+    <string name="retire">Retire a shoe All of the membership rules contained herein apply equally to members temporary members and guest alike Fitness</string>
+    <string name="set_max_distance">Set Max Distance</string>
+    <string name="set_date_of_start_usage">Set Date of Start Usage</string>
+    <string name="assign_activity_type">Assign Activity Type</string>
+    <string name="add_shoe_details">Add Shoe Details</string>
+    <string name="walking">Walking</string>
+    <string name="running">Running</string>
+    <string name="save_shoe">Save Shoe</string>
+    <string name="my_activity_gear">My Activity Gear</string>
+    <string name="my_retired_gears">My Retired Gears</string>
+    <string name="title">Title</string>
+    <string name="terms_condition">PrivacyPolicies.com uses cookies to provide necessary website functionality, improve your experience and analyze our traffic. By using our website, you agree to our Privacy Policy and our cookies usage.</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="achievement">Achievement</string>
+    <string name="user_info">User Info</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Logout</string>
+    <string name="support">Support</string>
+    <string name="notification">Notification</string>
+    <string name="setting">Setting</string>
+    <string name="calendar">Calendar</string>
+    <string name="challenges">Challenges</string>
+    <string name="connections">Connections</string>
+    <string name="videos_gallery">Videos Gallery</string>
+    <string name="gears">Gears</string>
+    <string name="activities">Activities</string>
+    <string name="my_profile">My Profile</string>
+</resources>
